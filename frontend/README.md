@@ -30,7 +30,7 @@ Eco-Basket is a sustainability-focused web application designed with a modern fr
 ### **Prerequisites**
 1. **Java 17+**: Ensure Java is installed and added to your system's PATH.
 2. **MySQL 8**: Download and configure MySQL.
-3. **Lombok**: Verify that Lombok is set up in your IDE (e.g., IntelliJ IDEA or Eclipse).
+3. **Lombok**: Verify that Lombok is set up in your Eclipse IDE.
 
 ### **Database Configuration**
 1. Create a new MySQL database named `eco-basket`.
