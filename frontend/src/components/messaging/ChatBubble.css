@@ -1,0 +1,26 @@
+.chat-bubble {
+    max-width: 60%;
+    padding: 10px;
+    border-radius: 15px;
+    margin: 5px 10px;
+    font-size: 14px;
+    word-wrap: break-word;
+}
+
+.sent {
+    background-color: #007bff; /* Blue for sent messages */
+    color: white;
+    align-self: flex-end;
+    text-align: right;
+}
+
+.received {
+    background-color: #f1f1f1; /* Light gray for received messages */
+    color: black;
+    align-self: flex-start;
+    text-align: left;
+}
+
+.bubble-text {
+    margin: 0;
+}

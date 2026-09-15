@@ -1,0 +1,35 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+.login-container h2{
+    margin-bottom: 1;
+}   
+.login-container label{
+    display: block;
+    margin-top: 1rem;
+}
+.login-container input{
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    box-sizing: border-box;
+}
+.login-container button{
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 1.5rem;
+    box-sizing: border-box;
+    background: #333;
+    color: #ea0909;
+    border: none;
+    cursor: pointer;
+}
+.login-container .error{
+    color: red;
+    margin-top: 1rem;
+}

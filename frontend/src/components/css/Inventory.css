@@ -1,0 +1,87 @@
+/* Inventory.css - Modern Minimal Organic */
+.inventory-tracker {
+  padding: 1rem;
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  font-family: 'Open Sans', sans-serif;
+  max-width: 100vw;
+  margin: 0 auto;
+}
+
+.inventory-tracker h2 {
+  margin-bottom: 1.2rem;
+  font-size: 1.6rem;
+  text-align: center;
+  color: #2e7d32;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 0.5rem;
+}
+
+.inventory-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-around;
+}
+
+.inventory-card {
+  background: #fafafa;
+  width: calc(50% - 1rem);  /* Two cards per row with gap */
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  transition: box-shadow 0.2s;
+}
+
+.inventory-card:hover {
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.inventory-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.4rem;
+  color: #2e7d32;
+}
+
+.inventory-card .price,
+.inventory-card .quantity {
+  font-size: 0.9rem;
+  margin-bottom: 0.4rem;
+  color: #424242;
+}
+
+.update-section {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.update-section input {
+  flex: 1;
+  padding: 0.4rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.update-section button {
+  padding: 0.4rem 0.6rem;
+  background-color: #2e7d32;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.update-section button:hover {
+  background-color: #27632a;
+}
+
+@media (max-width: 600px) {
+  .inventory-card {
+    width: 100%;
+  }
+}

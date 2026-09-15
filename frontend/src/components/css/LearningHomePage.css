@@ -1,0 +1,154 @@
+.learning-platform {
+  text-align: center;
+  padding: 20px;
+  background-color: #f0f2f5;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+
+.filter-section {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.filter-section label {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #555;
+}
+
+.filter-section select {
+  padding: 8px 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.filter-section select:hover {
+  border-color: #1da1f2;
+}
+
+
+.blog-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+}
+
+
+.blog-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 500px;
+  border: 1px solid #e1e8ed;
+  transition: background 0.2s ease-in-out;
+  position: relative;
+}
+
+.blog-card:hover {
+  background: #f5f8fa;
+}
+
+.blog-card .author {
+  font-weight: bold;
+  color: #1da1f2;
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+
+.blog-card .content {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.4;
+  word-wrap: break-word;
+}
+.blog-card h2{
+  color: black;
+}
+
+.blog-card .time {
+  font-size: 0.85rem;
+  color: #657786;
+  margin-top: 8px;
+}
+
+
+.like-btn, .save-btn {
+  margin-right: 10px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.like-btn {
+  background-color: #1da1f2;
+  color: white;
+}
+
+.like-btn:hover {
+  background-color: #0d8aec;
+}
+
+.save-btn {
+  background-color: #ffcc00;
+  color: black;
+}
+
+.save-btn:hover {
+  background-color: #e6b800;
+}
+
+
+.comment-section {
+  margin-top: 10px;
+}
+
+.comment-section input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  margin-top: 5px;
+}
+
+.comments {
+  margin-top: 10px;
+  max-height: 100px;
+  overflow-y: auto;
+}
+
+.comment {
+  background-color: #f1f1f1;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+
+@media (max-width: 600px) {
+  .blog-card {
+    width: 90%;
+  }
+}

@@ -1,0 +1,192 @@
+/* Ensure the background image stays visible only for this page */
+.product-detail-page {
+    height: 100%;
+    width: 100%;
+    background: url('https://images.pexels.com/photos/2165688/pexels-photo-2165688.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.product-detail-container { 
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
+    background: rgba(34, 34, 34, 0.9); 
+    border-radius: 16px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(6px); /* blur effect */
+    font-family: 'Poppins', sans-serif;
+    transition: transform 0.3s ease;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+/* Hover effect */
+.product-detail-container:hover {
+    transform: scale(1.05); 
+    filter: none; 
+}
+
+/* Heading */
+.product-detail-container h2 {
+    font-size: 2rem;
+    color: #ddd;  
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: none;
+    letter-spacing: 1px;
+}
+
+/* Form layout */
+.product-detail-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    width: 100%;
+}
+
+/* Labels */
+.product-detail-container label {
+    color: #ddd;  
+    font-weight: 600;
+    font-size: 1rem;
+    width: 100%;
+}
+
+/* Inputs and Textareas */
+.product-detail-container input,
+.product-detail-container textarea,
+.product-detail-container select {
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.85);
+    color: #111;  
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Placeholder text */
+.product-detail-container input::placeholder,
+.product-detail-container textarea::placeholder {
+    color: #444; 
+}
+
+/* Focus effect */
+.product-detail-container input:focus,
+.product-detail-container textarea:focus,
+.product-detail-container select:focus {
+    box-shadow: 0 0 10px rgba(0, 191, 255, 0.8);
+    border: 1px solid #00bfff;
+}
+
+/* Submit Button */
+.product-detail-container button {
+    padding: 14px;
+    font-size: 1.1rem;
+    background: linear-gradient(135deg, #00bfff, #007bff);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 100%;
+    box-shadow: 0 6px 15px rgba(0, 191, 255, 0.4);
+}
+
+.product-detail-container button:hover {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 191, 255, 0.6);
+}
+
+/* File input */
+.product-detail-container input[type="file"] {
+    background: white;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* Image Preview */
+.product-detail-container img {
+    border-radius: 12px;
+    margin-top: 10px;
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Popup styles for top of the page */
+.success-popup-top {
+    position: fixed;
+    top: 140px; /* Moved lower to avoid covering header and more visible */
+    right: 30px;
+    background: linear-gradient(135deg, #2196f3, #0d47a1); /* blue sleek gradient */
+    color: white;  /* Ensure text inside popup is white */
+    padding: 20px 30px; /* Increased padding for larger popup */
+    font-size: 1.2rem; /* Increased font size for better visibility */
+    font-weight: 600;
+    border-radius: 10px; /* Sharper edges for a more sleek look */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    opacity: 0;
+    transform: translateY(-30px);
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Show the popup */
+.success-popup-top.show {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.success-popup-top div {
+    font-weight: 600;
+    color: white;  /* Ensure the text inside the div is white */
+}
+
+.success-popup-top .icon {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+/* Success popup overlay */
+.success-popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 999;
+}
+
+/* Make the popup dismissible on hover */
+.success-popup-top:hover {
+    cursor: pointer;
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .product-detail-container {
+        max-width: 90%;
+        padding: 20px;
+    }
+}

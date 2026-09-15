@@ -1,0 +1,45 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# IDE / Editor settings
+backend/.classpath
+backend/.factorypath
+backend/.settings/
+
+# Gradle & Maven Build Files
+backend/.gradle/
+backend/bin/
+backend/target/
+backend/target/maven-status/
+
+# Node.js dependencies
+frontend/node_modules/
+frontend/package-lock.json  # Optional, depending on your workflow
+
+# Logs & Temp Files
+*.tmp
+
+
+db_migration/

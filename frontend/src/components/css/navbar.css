@@ -1,0 +1,147 @@
+/* === Navbar Container === */
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--deep-sage);
+    padding: 0.75rem 1.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  /* === Logo Section === */
+  .logo img {
+    height: 50px;
+    width: auto;
+  }
+  
+  /* === Nav List (Main Links) === */
+  .navlist {
+    display: flex;
+    gap: 1.25rem;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* === Nav Items (links/buttons) === */
+  .navlist li {
+    position: relative;
+  }
+  
+  .navlist a,
+  .cart-button,
+  .sign-in,
+  .sign-up {
+    color: var(--rich-ivory);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.5rem 0.75rem;
+    border-radius: 4px;
+    transition: color 0.3s, background-color 0.3s;
+  }
+  
+  .navlist a:hover,
+  .cart-button:hover {
+    color: var(--muted-gold);
+  }
+  
+  /* === Sign-in / Sign-up buttons === */
+  .sign-up {
+    background-color: var(--muted-gold);
+    color: var(--rich-ivory);
+  }
+  
+  .sign-up:hover {
+    background-color: var(--warm-terracotta);
+  }
+  
+  .sign-in {
+    background-color: var(--soft-teal);
+    color: var(--rich-ivory);
+  }
+  
+  .sign-in:hover {
+    background-color: var(--warm-terracotta);
+  }
+  
+  /* === Cart Button === */
+  .cart-button {
+    background: none;
+    border: none;
+    font-size: 22px;
+    color: var(--rich-ivory);
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .cart-icon {
+    font-size: 24px;
+  }
+  
+  .cart-badge {
+    position: absolute;
+    top: -6px;
+    right: -10px;
+    background: red;
+    color: white;
+    font-size: 12px;
+    width: 18px;
+    height: 18px;
+    font-weight: bold;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* === User Profile Icon (Initials) === */
+  .user-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #f1f1f1;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .user-icon:hover {
+    background-color: #0056b3;
+    color: white;
+  }
+  
+  /* === Notification Bell Icon === */
+  .bell-icon {
+    position: relative;
+    padding: 0.5rem;
+    font-size: 20px;
+    color: var(--rich-ivory);
+    cursor: pointer;
+    display: inline-block;
+  }
+  
+  .bell-icon:hover {
+    color: var(--muted-gold);
+  }
+  
+  .badge {
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    background: red;
+    color: white;
+    font-size: 11px;
+    padding: 2px 6px;
+    border-radius: 50%;
+  }
+  

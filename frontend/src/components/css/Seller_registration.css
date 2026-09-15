@@ -1,0 +1,187 @@
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8fafc;
+  margin: 0;
+  padding: 0;
+}
+
+.SellerRegistration {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.SellerRegistration h2 {
+  font-size: 2rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
+
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s ease;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: #4caf50;
+  background-color: #fff;
+}
+
+
+input::placeholder,
+textarea::placeholder {
+  color: #aaa;
+}
+
+
+label {
+  font-weight: 500;
+  color: #444;
+  margin-bottom: 5px;
+  display: block;
+}
+
+
+.err-msg {
+  color: #f44336;
+  font-size: 0.9rem;
+}
+
+
+button[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+button[type="submit"]:disabled {
+  background-color: #d6d6d6;
+  cursor: not-allowed;
+}
+
+
+button[type="button"] {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="button"]:hover {
+  background-color: #e53935;
+}
+
+
+input[type="file"] {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  width: 100%;
+}
+
+textarea {
+  height: 150px;
+}
+
+/* Responsive Styling */
+@media (min-width: 768px) {
+  .SellerRegistration {
+      padding: 40px;
+  }
+
+  form {
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+  }
+
+  form div {
+      grid-column: span 1;
+  }
+}
+
+
+.SellerRegistration .form-section {
+  padding: 10px;
+  background-color: #f2f2f2;
+  border-radius: 6px;
+}
+
+.SellerRegistration .form-section h3 {
+  color: #4caf50;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+.SellerRegistration .form-section p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+
+.SellerRegistration .form-section input,
+.SellerRegistration .form-section textarea,
+.SellerRegistration .form-section select {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-actions button {
+  width: 48%;
+}
+
+
+button[type="submit"],
+button[type="button"] {
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+
+button[type="submit"]:hover,
+button[type="button"]:hover {
+  transform: translateY(-3px);
+}

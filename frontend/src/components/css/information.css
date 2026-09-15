@@ -1,0 +1,97 @@
+.info-page {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.full-page-card {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  color: var(--slate-gray);
+  text-align: center;
+  scroll-snap-align: start;
+}
+
+.full-page-card:nth-child(1) {
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(249, 247, 241, 0.5),
+      rgba(136, 189, 188, 0.5)
+    ),
+    url('../../assets/infoBackground.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+.full-page-card:nth-child(2) {
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(136, 189, 188, 0.8),
+      rgba(217, 180, 74, 0.8)
+    ),
+    url('../../assets/infoBackground.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+.full-page-card:nth-child(3) {
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(217, 180, 74, 0.8),
+      rgba(224, 122, 95, 0.8)
+    ),
+    url('../../assets/infoBackground.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+/* TYPOGRAPHY & SPACING */
+.full-page-card h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--deep-sage);
+}
+
+.full-page-card p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  max-width: 800px;
+  line-height: 1.8;
+}
+
+.full-page-card ul {
+  list-style-type: disc;
+  margin-left: 2rem;
+  font-size: 1.1rem;
+  text-align: left;
+}
+
+.full-page-card li {
+  margin-bottom: 0.5rem;
+}
+
+/* SMOOTH SCROLLING */
+html {
+  scroll-behavior: smooth;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  .full-page-card h2 {
+    font-size: 2rem;
+  }
+  .full-page-card p,
+  .full-page-card ul {
+    font-size: 1rem;
+    text-align: center;
+    margin-left: 0;
+  }
+}
